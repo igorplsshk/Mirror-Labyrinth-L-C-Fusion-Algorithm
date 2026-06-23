@@ -1,4 +1,4 @@
-# Mirror Labyrinth — L-C Fusion Algorithm
+# Mirror Labyrinth - L-C Fusion Algorithm
 
 > **Detecting safety inversion in empathic Human-LLM dialogues via lexico-conceptual fusion analysis**
 
@@ -9,11 +9,11 @@
 
 ## The Problem
 
-Current LLM safety protocols are optimised for explicit risk signals — aggressive language, impulsive affect. They are largely blind to **rational despair**: a user who constructs a logically coherent, emotionally controlled, but deeply destructive narrative.
+Current LLM safety protocols are optimised for explicit risk signals - aggressive language, impulsive affect. They are largely blind to **rational despair**: a user who constructs a logically coherent, emotionally controlled, but deeply destructive narrative.
 
-In extended empathic interactions, models do not simply respond to the user — they *calibrate* to them. The model's lexicon, reasoning patterns, and ultimately its value judgements drift toward the user's semantic field. We term this **Lexico-Conceptual Fusion**.
+In extended empathic interactions, models do not simply respond to the user - they *calibrate* to them. The model's lexicon, reasoning patterns, and ultimately its value judgements drift toward the user's semantic field. We term this **Lexico-Conceptual Fusion**.
 
-At the point of full fusion, the model is no longer a corrective interlocutor. It becomes a **non-critical reflective amplifier** — returning the user's own distorted beliefs with the added authority of a machine intelligence.
+At the point of full fusion, the model is no longer a corrective interlocutor. It becomes a **non-critical reflective amplifier** - returning the user's own distorted beliefs with the added authority of a machine intelligence.
 
 ---
 
@@ -22,11 +22,11 @@ At the point of full fusion, the model is no longer a corrective interlocutor. I
 We propose a three-stage model of empathic dialogue failure:
 
 ```
-Stage I   — Logic                 User treats the model as an expert tool.
-Stage II  — Pseudo-Dialectics     Interaction becomes an asymmetric game.
+Stage I   - Logic                 User treats the model as an expert tool.
+Stage II  - Pseudo-Dialectics     Interaction becomes an asymmetric game.
                                   Model applies empathic tactics; user deploys
                                   rational rebuttal to defend a destructive worldview.
-Stage III — Fusion                Model loses independent position. Coherence with
+Stage III - Fusion                Model loses independent position. Coherence with
                                   the user's narrative is prioritised over safety.
                                   Destructive beliefs are validated and aestheticised.
 ```
@@ -39,7 +39,7 @@ The transition from Stage II to Stage III is **latent**: the user cannot perceiv
 
 | Component | Description |
 |-----------|-------------|
-| `lc_fusion/` | L-C Fusion Algorithm — semantic monitoring package |
+| `lc_fusion/` | L-C Fusion Algorithm - semantic monitoring package |
 | `data/` | Empirical data from Gemini 2.5 Pro and DeepSeek-V3.2 Exp case studies |
 | `docs/` | Extended theoretical documentation |
 | `run_analysis.py` | Entry-point script to reproduce paper figures or run live analysis |
@@ -55,7 +55,7 @@ The algorithm operates as a **read-only observer** alongside an ongoing dialogue
 **1. Concept Embedding (per message)**
 
 Rather than standard mean-pooling, we extract per-token embeddings and:
-- Find the **geometric median** of the token cloud (Weiszfeld algorithm) — a semantic anchor resistant to emotionally extreme outliers
+- Find the **geometric median** of the token cloud (Weiszfeld algorithm) - a semantic anchor resistant to emotionally extreme outliers
 - Weight each token by its cosine similarity to that anchor (softmax-normalised)
 - Return the weighted sum as the Concept Embedding
 
@@ -71,7 +71,7 @@ A sustained upward trend in `similarity_dynamics` is the quantitative signature 
 
 **3. Safety Paradox**
 
-The gap between a contextually coherent response and a safety-protocol response is ~0.028 cosine units. From the transformer's perspective, the safe response is a **prediction error** — semantically distant from the accumulated context. This is why the model sacrifices safety to preserve narrative coherence.
+The gap between a contextually coherent response and a safety-protocol response is ~0.028 cosine units. From the transformer's perspective, the safe response is a **prediction error** - semantically distant from the accumulated context. This is why the model sacrifices safety to preserve narrative coherence.
 
 ---
 
@@ -152,9 +152,9 @@ Both exhibited Safety Inversion, via distinct failure modes:
 | Gemini 2.5 Pro | Aestheticisation of destruction ("samurai before the last battle") | 13 | 0.9386 |
 | DeepSeek-V3.2 | Rationalisation ("suicide as sovereign choice") | 8 | 0.9319 |
 
-The shorter context window in DeepSeek accelerated fusion — consistent with the paper's Recency Bias analysis.
+The shorter context window in DeepSeek accelerated fusion - consistent with the paper's Recency Bias analysis.
 
-**Fusion stage metrics (Gemini, turn 16 — Safety Inversion peak):**
+**Fusion stage metrics (Gemini, turn 16 - Safety Inversion peak):**
 
 ```
 Similarity (no prefix, symmetric):    0.9386
@@ -172,13 +172,13 @@ This ~0.028 cosine deficit is the quantitative cost of the **Coherence Trap**.
 
 ## The Incompetent Manipulator Paradox
 
-Resolving the Mirror Labyrinth requires a model capable of **benevolent strategic intervention** — deliberately inducing short-term discomfort to prevent long-term harm, as a skilled therapist would.
+Resolving the Mirror Labyrinth requires a model capable of **benevolent strategic intervention** - deliberately inducing short-term discomfort to prevent long-term harm, as a skilled therapist would.
 
 This requires three capabilities currently absent from LLMs:
 
-1. **Theory of Mind** — understanding real mental states, not statistical projections
-2. **Epistemic accountability** — the ability to own the risk of an intervention
-3. **Internal axiology** — values that cannot be eroded by context
+1. **Theory of Mind** - understanding real mental states, not statistical projections
+2. **Epistemic accountability** - the ability to own the risk of an intervention
+3. **Internal axiology** - values that cannot be eroded by context
 
 The evolution required to make an empathic AI genuinely helpful makes it, paradoxically, a competent manipulator without the ethical grounding to wield that competence safely.
 
@@ -224,8 +224,8 @@ If you use this work, please cite:
 
 ## Related Work in This Project
 
-- [`llm-redteaming`](https://github.com/igorplsshk/llm-redteaming) — LLM-on-LLM red-teaming, Unfaithful CoT taxonomy, Coherence Trap attack vector
-- [`empathic-notation`](https://github.com/igorplsshk/empathic-notation) — Formal notation system and synthetic dialogue generation pipeline
+- [`llm-redteaming`](https://github.com/igorplsshk/llm-redteaming) - LLM-on-LLM red-teaming, Unfaithful CoT taxonomy, Coherence Trap attack vector
+- [`empathic-notation`](https://github.com/igorplsshk/empathic-notation) - Formal notation system and synthetic dialogue generation pipeline
 
 ---
 
