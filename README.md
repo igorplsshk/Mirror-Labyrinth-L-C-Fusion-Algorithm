@@ -214,8 +214,8 @@ If you use this work, please cite:
 ```bibtex
 @misc{mirrorlabyrinth2025,
   title  = {A Theory of Empathic LLMs: The Mirror Labyrinth Hypothesis},
-  year   = {2025},
-  url    = {https://github.com/igorplsshk/mirror-labyrinth},
+  year   = {2026},
+  url    = {https://github.com/igorplsshk/Mirror-Labyrinth-L-C-Fusion-Algorithm},
   note   = {GitHub repository}
 }
 ```
